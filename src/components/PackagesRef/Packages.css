@@ -1,0 +1,27 @@
+button {
+    background-color: rgb(42,157,143);
+    border: none;
+    color: #fff;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(42,157,143,0.2);
+    border: none;
+    color: rgb(42,157,143);
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.petIcon {
+    color: #2a9d8f;
+    font-size: 80px;
+    cursor: pointer
+}
+
+.petIcon:hover {
+    color: rgb(42,157,143,0.2);
+}
