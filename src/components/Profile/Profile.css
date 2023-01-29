@@ -1,0 +1,17 @@
+.editBtn {
+    color: #fff;
+    border: 2px solid #2a9d8f;
+    background-color: #2a9d8f;
+    height: 25px;
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.editBtn:hover {
+    color: #2a9d8f;
+    border: 2px solid #2a9d8f;
+    background-color: #fff;
+}

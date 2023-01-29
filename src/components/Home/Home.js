@@ -1,7 +1,7 @@
 import { Container } from "../StylesPages/PageLayout";
 import './Home.css'
 import Typed from "typed.js";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 function Home() {  
     const text = useRef(null);

@@ -7,7 +7,7 @@ export const Container = styled.div `
 `
 
 export const StyledBox = styled.div `
-    height: 250px;
+    height: 340px;
     width: 300px;
     display: block;
     text-align: center;
@@ -27,10 +27,10 @@ export const Flexarea = styled.div `
 `
 
 export const CardHeader = styled.div `
-    heigh: 85px;
+    heigh: 150px;
     width: 300px;
-    margin-top: 0;
-    padding-top : 0;
+    margin-top: -20px;
+    padding-top: 0;
     border-radius: 15px 15px 0 0;
     background-color: #2a9d8f;
 `
@@ -74,4 +74,23 @@ export const Topic = styled.h1 `
     justify-content: center;
     color: #2a9d8f;
     align-items: center;
+`
+
+export const GridArea = styled.div `
+    position: relative;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    padding: 0px 30px 30px 30px;
+    @media screen and (max-width: 768px) {
+        display: flex;
+    }
+`
+
+export const ProfileBox = styled.div `
+    border: 2px solid #2a9d8f;
+    height: 350px; 
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
 `
