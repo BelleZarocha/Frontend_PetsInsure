@@ -66,6 +66,22 @@ const edit = (e) => {
         console.log(res);
       });
 };
+const editPet = (e) => {
+  axios
+      .put(
+          `https://dull-blue-gorilla-shoe.cyclic.app/user/editpet`,
+          {
+            specie: petSpecies,
+            name: petName,
+          },
+          {
+            headers: {Authorization: `Bearer ${localStorage.getItem("jwt")}`},
+          }
+      )
+      .then((res) => {
+        console.log(res);
+      });
+};
 // const handleSubmit = e => {
 //   e.preventDefault();
 //   axios
@@ -232,6 +248,9 @@ return (
       </GridArea>
       <div style={{display: "flex", justifyContent: "center"}}>
         <button className="updateBtn" onClick={()=>edit()}>Update</button>
+      </div>
+      <div style={{display: "flex", justifyContent: "center"}}>
+        <button className="updateBtn" onClick={()=>editPet()}>Update</button>
       </div>
     </Container>
 );
