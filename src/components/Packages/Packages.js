@@ -174,7 +174,7 @@ function Packages() {
             <button onClick={()=>{
                 console.log(item.id)
                 axios
-                    .put("http://localhost:8000/package/buypack",
+                    .put("http://localhost:8000/packages/buypack",
                         {
                             package_id: item.id
                         },
