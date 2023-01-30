@@ -38,7 +38,7 @@ function Nav(props) {
                 </NavLogo>
                 <NavMenu showToggle={showToggle}>
                   <NavList>
-                    <NavLink to="/profile">Profile</NavLink>
+                    <NavLink to="/edit_profile">Profile</NavLink>
                   </NavList>
                   <NavList>
                     <NavLink to="/" onClick={handleLogOut}>

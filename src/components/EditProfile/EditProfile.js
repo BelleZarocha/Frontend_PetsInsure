@@ -82,43 +82,7 @@ const editPet = (e) => {
         console.log(res);
       });
 };
-// const handleSubmit = e => {
-//   e.preventDefault();
-//   axios
-//       .get(`https://dull-blue-gorilla-shoe.cyclic.app/user`, {})
-//       .then(res => {
-//         console.log(res.data);
-//         // setFormData(res.data)
-//       })
-//       .catch(err => {
-//         console.error(err);
-//       });
-// };
-const [selectedItem, setSelectedItem] = useState('');
-const options = [
-  { value: 'Dog', label: 'Dog' },
-  { value: 'Cat', label: 'Cat' },
-  { value: 'Exotic', label: 'Exotic' },
-];
-const handleChoose = (event) => {
-  setSelectedItem(event.target.value);
-}
-const [image, setImage] = useState(null);
-const [imageUrl, setImageUrl] = useState('');
-const handleImageChange = (event) => {
-  const imageFile = event.target.files[0];
-  setImage(imageFile);
-  const reader = new FileReader();
-  reader.onload = () => {
-    setImageUrl(reader.result);
-  };
-  reader.readAsDataURL(imageFile);
-}
-const handleImageUpload = (event) => {
-  event.preventDefault();
-  // handle image upload here
-  console.log('Image file:', image);
-}
+
 return (
     <Container>
       <GridArea>
@@ -195,12 +159,6 @@ return (
         </ProfileBox>
         <ProfileBox>
           <div style={{margin: "10px"}}>
-            <label style={{color: "#2A9D8F"}}>Select an option:</label>
-            <select style={{color: "#2A9D8F"}} value={selectedItem} onChange={()=>{console.log("test")}}>
-              {options.map(option => (
-                  <option key={option.value} value={option.value}>{option.label}</option>
-              ))}
-            </select>
             <form style={{lineHeight: "45px", color: "#2A9D8F"}}>
               <label>
                 Name:
@@ -223,11 +181,11 @@ return (
                     defaultValue={petSpecies}
                 />
               </label>
-              <br />
+              {/* <br />
               <label>Select an image:
                 <input type="file" accept="image/*" onChange={handleImageChange} />
                 <button type="submit">Upload</button>
-              </label>
+              </label> */}
               <br />
               Pets Insurance:
               <label
@@ -249,9 +207,9 @@ return (
       <div style={{display: "flex", justifyContent: "center"}}>
         <button className="updateBtn" onClick={()=>edit()}>Update</button>
       </div>
-      <div style={{display: "flex", justifyContent: "center"}}>
+      {/* <div style={{display: "flex", justifyContent: "center"}}>
         <button className="updateBtn" onClick={()=>editPet()}>Update</button>
-      </div>
+      </div> */}
     </Container>
 );
 }

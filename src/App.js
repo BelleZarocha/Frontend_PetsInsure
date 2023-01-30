@@ -8,8 +8,7 @@ import Register from './components/Register/Register';
 import Login from './components/Login/Login';
 import Packages from './components/Packages/Packages';
 import EditProfile from './components/EditProfile/EditProfile'
-import Profile from './components/Profile/Profile';
-// import Payment from './components/Payment/Payment'
+
 function App() {
 	const[login,setLogin]=useState(false)
 	useEffect(()=>{
@@ -30,9 +29,7 @@ function App() {
 				<Route path="/register" element={<Register />} />
 				<Route path="/login" element={<Login setLogin={setLogin}/>} />
 				<Route path="/packages" element={<Packages />} />
-				{/* <Route path="/payment" element={<Payment />} /> */}
 				<Route path="/edit_profile" element={<EditProfile />} />
-				<Route path="/profile" element={<Profile />} />
       		</Routes>
 
 			<Footer />

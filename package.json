@@ -20,6 +20,7 @@
     "react-slick": "^0.29.0",
     "react-typing-animation": "^1.6.2",
     "styled-components": "^5.3.6",
+    "sweetalert": "^2.1.2",
     "type-js": "^1.0.0",
     "typed.js": "^2.0.12",
     "web-vitals": "^2.1.4"
